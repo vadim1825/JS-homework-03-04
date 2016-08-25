@@ -1,0 +1,70 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: #c2c2c2;
+}
+
+.backwhite {
+	height: 540px;
+	width: 800px;
+	margin: 30px auto;
+	background: white;
+	border: solid 1px black;
+	padding: 20px 70px 40px 70px;
+}
+
+.header {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+
+.marked {
+	font-size: 18px;
+}
+
+.unmarked {
+	list-style: none;
+}
+
+.unmarked label {
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+.button {
+	display: block;
+	margin: 0px auto;
+    margin-top: 40px;
+	height: 35px;
+	width: 300px;
+	background: #b1dcfc;
+	border: solid 2px black;
+	font-size: 18px;
+}
+
+input {
+	display: none;
+}
+
+input + label {
+	cursor: pointer;
+}
+
+input + label::before {
+	content: "";
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin-right: 5px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+}
+
+input:checked + label::before {
+	background-position: -16px 0px;
+}
